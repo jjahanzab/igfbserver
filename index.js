@@ -9,6 +9,8 @@ app.get('/', (req, res) => {
   res.json({ message: 'Hello World!' });
 });
 
+// http://localhost:3000/igfbapp?url=
+
 app.get('/igfbapp', async (req, res) => {
   try {
     const url = req.query.url;
